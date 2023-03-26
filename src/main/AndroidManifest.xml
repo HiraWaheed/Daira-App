@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dairaapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DairaApp">
+        <activity
+            android:name=".SendMessageToOC"
+            android:exported="false" />
+        <activity
+            android:name=".ShowEventNews"
+            android:exported="false" />
+        <activity
+            android:name=".SetScoreboard"
+            android:exported="false" />
+        <activity
+            android:name=".SendEventNews"
+            android:exported="false" />
+        <activity
+            android:name=".SetEventVenue"
+            android:exported="false" />
+        <activity
+            android:name=".ShowOCRegisterations"
+            android:exported="false" />
+        <activity
+            android:name=".ShowEventRegisteration"
+            android:exported="false" />
+        <activity
+            android:name=".AddEvent"
+            android:exported="false" />
+        <activity
+            android:name=".ParticipantsPortal"
+            android:exported="false" />
+        <activity
+            android:name=".ShowScoreboard"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterEvent"
+            android:exported="false" />
+        <activity
+            android:name=".ShowVenues"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAllRegisterations"
+            android:exported="false" />
+        <activity
+            android:name=".AddEventCategory"
+            android:exported="false" />
+        <activity
+            android:name=".ParticipantSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Participant_Login"
+            android:exported="false" />
+        <activity
+            android:name=".OCPortal"
+            android:exported="false" />
+        <activity
+            android:name=".OC_Login"
+            android:exported="false" />
+        <activity
+            android:name=".AddOC"
+            android:exported="false" />
+        <activity
+            android:name=".MentorPortal"
+            android:exported="false" />
+        <activity
+            android:name=".AddMentor"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPortal"
+            android:exported="false" />
+        <activity
+            android:name=".Mentor_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Login"
+            android:exported="false" />
+        <activity
+            android:name=".PortalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OCPortal">
+
+  <include
+      android:id="@+id/include3"
+      layout="@layout/logo_layout"
+      android:layout_width="419dp"
+      android:layout_height="84dp"
+      tools:layout_editor_absoluteX="-8dp" />
+
+  <TextView
+      android:id="@+id/textView11"
+      android:layout_width="157dp"
+      android:layout_height="28dp"
+      android:layout_marginTop="28dp"
+      android:text="@string/oc_portal"
+      android:textColor="#EF6C00"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/include3" />
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="414dp"
+      android:layout_height="69dp"
+      android:layout_marginBottom="4dp"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.962"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="ViewRegisteredParticipants"
+        android:text="@string/see_registered_participants"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="407dp"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="127dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="SetEventVenuefunc"
+        android:text="@string/set_event_venue"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="111dp"
+        android:layout_height="match_parent"
+        android:onClick="SendEventNewsfunc"
+        android:text="@string/send_event_news"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="481dp"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="125dp"
+        android:onClick="SetScoreboardfunc"
+        android:layout_height="match_parent"
+        android:text="set scoreboard"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="481dp" />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="20dp"
+      android:text="@string/mentor_s_message"
+      android:textColor="#EF6C00"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+  <TextView
+      android:id="@+id/textViewmsg"
+      android:layout_width="373dp"
+      android:layout_height="318dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="24dp"
+      android:hint="Message Here..."
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

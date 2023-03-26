@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParticipantSignUp">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/logo_layout"
+        android:layout_width="413dp"
+        android:layout_height="97dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="125dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Register as"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+    <EditText
+        android:id="@+id/edittxtname"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="376dp"
+        android:orientation="horizontal"
+        android:layout_height="83dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <RadioButton
+            android:id="@+id/radioambassador"
+            android:layout_width="215dp"
+            android:layout_height="83dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="checkradiostatusButton"
+            android:text="Ambassador"
+            android:textSize="20sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioprivate"
+            android:layout_width="157dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:onClick="checkradiostatusButton"
+            android:text="Private"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck"></RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupgender"
+        android:layout_width="376dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtname">
+
+        <RadioButton
+            android:id="@+id/radiomale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="checkradiogenderbutton"
+            android:text="Male"
+            android:textSize="20sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="checkradiogenderbutton"
+            android:text="Female"
+            android:textSize="20sp"></RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edittxtcnic"
+        android:layout_width="366dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="CNIC(Ex:3110132516274)"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupgender" />
+
+    <EditText
+        android:id="@+id/edittxtcontact"
+        android:layout_width="366dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Contact(Ex:03230074747)"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtcnic" />
+
+    <EditText
+        android:id="@+id/edittxtemail"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtcontact" />
+
+    <EditText
+        android:id="@+id/edittxtpassword"
+        android:layout_width="371dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtemail" />
+
+    <EditText
+        android:id="@+id/edittxtcode"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Ambassador Code"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtpassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="94dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="AddParticipant"
+        android:text="SIGNUP"
+        app:layout_constraintEnd_toStartOf="@+id/textViewlogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtcode" />
+
+    <TextView
+        android:id="@+id/textViewlogin"
+        android:layout_width="259dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="GoToParticipantLogin"
+        android:text="Already Signed Up?Login"
+        android:textColor="#EF6C00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtcode"
+        app:layout_constraintVertical_bias="0.027"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

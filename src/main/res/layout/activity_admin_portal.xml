@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPortal">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/logo_layout" />
+
+    <Button
+        android:id="@+id/viewregisteraion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:onClick="View_Registeration"
+        android:text="@string/view_registerations"
+        app:layout_constraintEnd_toEndOf="@+id/addmentors"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/addmentors"
+        app:layout_constraintTop_toBottomOf="@+id/addmentors" />
+
+    <Button
+        android:id="@+id/addcategoriesofevents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="Add_Category"
+        android:text="@string/add_event_category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/addmentors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="@string/add_mentors"
+        android:onClick="Add_Mentors"
+        app:layout_constraintEnd_toEndOf="@+id/addcategoriesofevents"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/addcategoriesofevents"
+        app:layout_constraintTop_toBottomOf="@+id/addcategoriesofevents" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Admin Portal"
+        android:textColor="#EF6C00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MentorPortal">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/logo_layout" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/mentor_portal"
+        android:textColor="#EF6C00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addsubevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="@string/add_event"
+        android:onClick="Add_Event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include3" />
+
+    <Button
+        android:id="@+id/addoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/add_oc"
+        android:onClick="Add_OC"
+        app:layout_constraintEnd_toEndOf="@+id/addsubevent"
+        app:layout_constraintStart_toStartOf="@+id/addsubevent"
+        app:layout_constraintTop_toBottomOf="@+id/addsubevent" />
+
+    <Button
+        android:id="@+id/vieweventregisteration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="View_Event_Registeration"
+        android:text="@string/view_event_registeration"
+        app:layout_constraintEnd_toEndOf="@+id/addoc"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/addoc"
+        app:layout_constraintTop_toBottomOf="@+id/addoc" />
+
+    <Button
+        android:id="@+id/viewallregisteration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="View_All_Registeration"
+        android:text="@string/view_all_registeration"
+        app:layout_constraintEnd_toEndOf="@+id/vieweventregisteration"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/vieweventregisteration"
+        app:layout_constraintTop_toBottomOf="@+id/vieweventregisteration" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
